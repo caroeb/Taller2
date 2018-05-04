@@ -1,7 +1,6 @@
 {
   "name": "tallerdos",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +12,14 @@
     "express": "^4.16.3",
     "handlebars": "^4.0.11",
     "mongo": "^0.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caroeb/Taller2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caroeb/Taller2/issues"
+  },
+  "homepage": "https://github.com/caroeb/Taller2#readme",
+  "description": ""
 }
