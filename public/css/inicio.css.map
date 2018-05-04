@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACJ,UAAU,EAAE,GAAG;CACd",
+    "sources": [
+        "inicio.scss"
+    ],
+    "names": [],
+    "file": "inicio.css"
+}
