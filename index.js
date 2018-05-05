@@ -1,8 +1,11 @@
 const express = require ("express"),
         consolidate = require("consolidate"),
-        handlebars = require("handlebars");
-var app = express();
-var queVaria = "holi";
+        handlebars = require("handlebars"),
+        MongoClient = require("mongodb").MongoClient
+        ;
+var app = express(),
+db;
+
 app.engine('hbs', consolidate.handlebars);
 
 app.set ('views', './views');
@@ -10,13 +13,30 @@ app.set('view engine', 'hbs');
 
 app.use(express.static('public'));
 
-app.get("/",(req, res) => {
-    res.render("index", {
-        variable : queVaria
-    });
+MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+    if (err) throw err;
+
+    db = client.db('fidget');
+
+    app.listen(3000);
 });
 
-app.listen(3000);
+app.get("/",(req, res) => {
+
+    var productos = db.collection('productos').find();
+
+    productos.toArray((err, result) => {
+        //console.log(productos);
+        res.render("index", {
+            productos : result
+        })
+    });
+    /*
+    res.render("index", {
+        validar: "hi"
+    });
+    */
+});
 
 /*
 para instalar mongod

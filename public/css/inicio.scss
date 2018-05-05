@@ -1,3 +1,115 @@
+$pink : #B83664;
+$gray : #DDDDDD;
+$green: #82BB57;
+$blue: #71CAFB;
+$yellow: #F8CA5F;
+$black: #4D4D4D;
+$aquaGreen : #00DCBC;
+
 body{
-background: red;
+background: white;
 }
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 200px;
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: $aquaGreen;
+        margin: 20px 0 20px 0;
+        color: white;
+        border-radius: 10px;
+        border: solid 0px blue;
+        height: 40px;
+        font-size: 20px;
+    }
+
+
+}
+
+[color~="Amarillo"] {
+    &:before {
+        content : "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        background: $yellow;
+        transform:  translateX(-37px) translateY(20px) rotate(45deg);
+        opacity: 0.48;
+        z-index: -1;
+    }
+}
+
+[color~="Azul"] {
+    &:before {
+        content : "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        background: $blue;
+        transform:  translateX(-37px) translateY(20px) rotate(45deg);
+        opacity: 0.48;
+        z-index: -1;
+    }
+}
+
+[color~="Rosa"] {
+    &:before {
+        content : "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        background: $pink;
+        transform:  translateX(-37px) translateY(20px) rotate(45deg);
+        opacity: 0.48;
+        z-index: -1;
+    }
+}
+
+[color~="Negro"] {
+    &:before {
+        content : "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        background: $black;
+        transform:  translateX(-37px) translateY(20px) rotate(45deg);
+        opacity: 0.48;
+        z-index: -1;
+    }
+}
+
+[color~="Gris"] {
+    &:before {
+        content : "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        background: $gray;
+        transform:  translateX(-37px) translateY(20px) rotate(45deg);
+        opacity: 0.48;
+        z-index: -1;
+    }
+}
+
+[color~="Verde"] {
+    &:before {
+        content : "";
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        background: $green;
+        transform:  translateX(-37px) translateY(20px) rotate(45deg);
+        opacity: 0.48;
+        z-index: -1;
+    }
+}
+

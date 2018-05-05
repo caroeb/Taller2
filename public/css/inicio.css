@@ -1,4 +1,93 @@
 body {
-  background: red;
+  background: white;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 200px;
+}
+
+.producto img {
+  width: 200px;
+  height: 200px;
+}
+
+.producto button {
+  cursor: pointer;
+  background-color: #00DCBC;
+  margin: 20px 0 20px 0;
+  color: white;
+  border-radius: 10px;
+  border: solid 0px blue;
+  height: 40px;
+  font-size: 20px;
+}
+
+[color~="Amarillo"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #F8CA5F;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Azul"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #71CAFB;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Rosa"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #B83664;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Negro"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #4D4D4D;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Gris"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #DDDDDD;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Verde"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #82BB57;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
 }
 /*# sourceMappingURL=inicio.css.map */

@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="/css/inicio.css">
 </head>
 <body>
-    <h1>{{variable}}</h1>
+       {{#each productos}}
+            <div class="producto" color="{{color}}">
+                <a href="/productos/{{name}}">
+                    <img src="{{imagen}}" alt="{{name}}">
+                </a><button>{{precio}}</button>
+            </div>    
+       {{/each}}
+    <!-- imagen, direccion : fidget-rosa-->
 </body>
 </html>

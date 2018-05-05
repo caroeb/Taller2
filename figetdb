@@ -1,7 +1,8 @@
 {
     "name" :"Fidget-Cube",
     "color" : "Amarillo",
-    "precio" : "19.95"
+    "precio" : "19.95",
+    "image" : "/img/imagen.png"
 }
 {
     "name" :"Fidget-Cube",
