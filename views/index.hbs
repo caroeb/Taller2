@@ -7,11 +7,22 @@
     <link rel="stylesheet" type="text/css" href="/css/inicio.css">
 </head>
 <body>
+    <div class="sorters">
+        <div class="sortbyColor">
+            <h3>Sort by color</h3>
+            <a href="/?color=Amarillo">
+            <div  class="selectorColor amarillo">
+
+            </div>
+            </a>
+        </div>
+    </div>
+
        {{#each productos}}
             <div class="producto" color="{{color}}">
                 <a href="/productos/{{name}}">
                     <img src="{{imagen}}" alt="{{name}}">
-                </a><button>{{precio}}</button>
+                </a><button> &#9951; ${{precio}}</button>
             </div>    
        {{/each}}
     <!-- imagen, direccion : fidget-rosa-->

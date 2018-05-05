@@ -90,4 +90,13 @@ body {
   opacity: 0.48;
   z-index: -1;
 }
+
+.selectorColor {
+  width: 100px;
+  height: 100px;
+}
+
+.amarillo {
+  background: #F8CA5F;
+}
 /*# sourceMappingURL=inicio.css.map */

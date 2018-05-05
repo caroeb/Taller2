@@ -25,6 +25,8 @@ app.get("/",(req, res) => {
 
     var productos = db.collection('productos').find();
 
+    if (req.query.color) 
+        productos.filter({color : req.query.color});
     productos.toArray((err, result) => {
         //console.log(productos);
         res.render("index", {
@@ -36,6 +38,19 @@ app.get("/",(req, res) => {
         validar: "hi"
     });
     */
+});
+
+app.get("/productos/:name", (req, res) => {
+    db.collection('productos').find (
+        {
+            name: req.params.name
+        }
+    ).toArray((err, result) => {
+        console.log(result[0]);
+        res.render('producto', {
+            fidget: result[0]
+        });
+    });
 });
 
 /*
