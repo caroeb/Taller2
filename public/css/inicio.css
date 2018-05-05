@@ -91,12 +91,68 @@ body {
   z-index: -1;
 }
 
-.selectorColor {
-  width: 100px;
-  height: 100px;
+.sorters {
+  background: #eee;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
-.amarillo {
+.sorters h3 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666;
+  width: 80%;
+  background: #ccc;
+  padding: 15px 0;
+  text-align: center;
+  box-sizing: content-box;
+  border: 2px #aaa solid;
+}
+
+.sorters .sortByColor {
+  width: 80%;
+}
+
+.sorters .sortByColor h3 {
+  background: white;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.sorters .sortByColor .colors {
+  display: flex;
+}
+
+.sorters .sortByColor .colors .selectorColor {
+  width: 30px;
+  height: 30px;
+}
+
+.sorters .sortByColor .colors .amarillo {
   background: #F8CA5F;
+}
+
+.sorters .sortByColor .colors .rosado {
+  background: #B83664;
+}
+
+.sorters .sortByColor .colors .gris {
+  background: #DDDDDD;
+}
+
+.sorters .sortByColor .colors .negro {
+  background: #4D4D4D;
+}
+
+.sorters .sortByColor .colors .azul {
+  background: #71CAFB;
+}
+
+.sorters .sortByColor .colors .verde {
+  background: #82BB57;
 }
 /*# sourceMappingURL=inicio.css.map */
