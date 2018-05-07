@@ -27,6 +27,7 @@ app.get("/",(req, res) => {
 
     if (req.query.color) 
         productos.filter({color : req.query.color});
+        
     productos.toArray((err, result) => {
         //console.log(productos);
         res.render("index", {
