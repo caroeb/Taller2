@@ -1,0 +1,59 @@
+$pink: #B83664;
+$gray: #DDDDDD;
+$green: #82BB57;
+$blue: #71CAFB;
+$yellow: #F8CA5F;
+$black: #4D4D4D;
+$fuente_titulo: 'Roboto',
+sans-serif;
+$fuente_parrafo: 'Open Sans Condensed',
+sans-serif;
+$color_primario: #00DCBC;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: transparent;
+}
+
+
+body {
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    background: #DDDD;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    .nav {
+        width: 80%;
+        height: 100%;
+        display: inline-flex;
+        align-content: stretch;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+        }
+        .home {
+            display: flex;
+        }
+        .menu {
+            font: 20px $fuente_titulo;
+            position: relative;
+            top: 30px;
+            color: #4D4D4D;
+        }
+        .carrito {
+            position: relative;
+            top: 20px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: transparent;
+}
+
+body {
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+  background: #DDDD;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+}
+
+header .nav {
+  width: 80%;
+  height: 100%;
+  display: inline-flex;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+header .nav a {
+  text-decoration: none;
+}
+
+header .nav .home {
+  display: flex;
+}
+
+header .nav .menu {
+  font: 20px "Roboto", sans-serif;
+  position: relative;
+  top: 30px;
+  color: #4D4D4D;
+}
+
+header .nav .carrito {
+  position: relative;
+  top: 20px;
+}
+/*# sourceMappingURL=nav.css.map */

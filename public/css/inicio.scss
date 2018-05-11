@@ -4,29 +4,108 @@ $green: #82BB57;
 $blue: #71CAFB;
 $yellow: #F8CA5F;
 $black: #4D4D4D;
-$aquaGreen: #00DCBC;
-body {
-    background: white;
-}
+$fuente_titulo: 'Roboto',
+sans-serif;
+$fuente_parrafo: 'Open Sans Condensed',
+sans-serif;
+$color_primario: #00DCBC;
 
-.producto {
+
+
+.sorters {
+    position: fixed;
+    background: #eee;
+    width: 18%;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    width: 200px;
-    img {
-        width: 200px;
-        height: 200px;
+    align-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    float: left;
+    h3 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #666;
+        width: 70%;
+        background: #ccc;
+        padding: 15px;
+        margin-top: 25px;
+        text-align: center;
+        box-sizing: content-box;
+        border: 2px #aaa solid;
     }
-    button {
+    .sortBy {
+        width: 80%;
+        h3 {
+            background: white;
+            width: 85%;
+            box-sizing: content-box;
+        }
+    }
+    .colorSort {
+        .colors {
+            width: 100%;
+            margin: 15px;
+            padding: 1px;
+            .selectorColor {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                flex-direction: column;
+                margin: 5px;
+            }
+            .amarillo {
+                background: $yellow;
+            }
+            .rosa {
+                background: $pink;
+            }
+            .gris {
+                background: $gray;
+            }
+            .negro {
+                background: $black;
+            }
+            .azul {
+                background: $blue;
+            }
+            .verde {
+                background: $green;
+            }
+        }
+    }
+    h2 {
         cursor: pointer;
-        background-color: $aquaGreen;
-        margin: 20px 0 20px 0;
-        color: white;
-        border-radius: 10px;
-        border: solid 0px blue;
-        height: 40px;
-        font-size: 20px;
+        color: $black;
+    }
+}
+
+.productosContainer {
+    margin-left: 20%;
+    .productoContainer {
+        display: inline-block;
+        .producto {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin-left: 170px;
+            margin-top: 100px;
+            img {
+                height: 200px;
+            }
+            button {
+                cursor: pointer;
+                background-color: $color_primario;
+                margin: 20px 0 20px 0;
+                color: white;
+                border-radius: 10px;
+                border: solid 0px blue;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
     }
 }
 
@@ -105,64 +184,5 @@ body {
         transform: translateX(-37px) translateY(20px) rotate(45deg);
         opacity: 0.48;
         z-index: -1;
-    }
-}
-
-.sorters {
-    background: #eee;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    h3 {
-        font-family: sans-serif;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: #666;
-        width: 80%;
-        background: #ccc;
-        padding: 15px 0;
-        text-align: center;
-        box-sizing: content-box;
-        border: 2px #aaa solid;
-    }
-    .sortByColor {
-        width: 80%;
-        
-        
-        h3 {
-            background: white;
-            width: 100%;
-            box-sizing: content-box;
-        }
-        .colors {
-            display : flex;
-            
-            .selectorColor {
-                width: 30px;
-                height: 30px;
-                
-            }
-            .amarillo {
-                background: $yellow;
-            }
-            .rosado {
-                background: $pink;
-            }
-            .gris {
-                background: $gray;
-            }
-            .negro {
-                background: $black;
-            }
-            .azul {
-                background: $blue;
-            }
-            .verde {
-                background: $green;
-            }
-        }
-        
     }
 }

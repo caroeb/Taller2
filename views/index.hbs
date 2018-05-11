@@ -5,14 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TallerDos</title>
     <link rel="stylesheet" type="text/css" href="/css/inicio.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
 </head>
 <body>
-    <div class="sorters ">
-        <h3 class="titleSort">Sort by</h3>
-        <div class="sortbyColor">
+    <header>
+        
+        <div class="nav">
+            <a href="" class="home">
+                <img src="img/logo.png" width="150px" alt="">
+            </a>
+
+            <a href="" class="menu">Fidget Cubes</a>
+            <a href="" class="menu">Fidget Spinners</a>
+            <a href="" class="menu">Shop</a>
+            <a href="" class="menu">Contact Us</a>
+
+            <a href="" class="carrito">
+                <img src="img/iconocar.png" width="40px" alt="">
+            </a>
+        </div>
+    </header>
+
+    <div class="sorters">
+
+        <h3 class="titleSort">Order by</h3>
+        <div class="sortby colorSort">
             <h3 class="titleSort">Color</h3>
             <div class="colors">
-<a href="/?color=Gris">
+
+
+
+            <a href="/?color=Gris">
                 <div  class="selectorColor gris">
 
                 </div>
@@ -32,8 +55,8 @@
 
                 </div>
             </a>
-            <a href="/?color=Rosado">
-                <div  class="selectorColor rosado">
+            <a href="/?color=Rosa">
+                <div  class="selectorColor rosa">
 
                 </div>
             </a>
@@ -46,15 +69,35 @@
             
             
         </div>
+        
+        <div class="sortby priceSort">
+            <h3 class="titleSort">Price</h3>
+            <a href="/?precio=9.95&precio=19.95"><h2>9.95 - 19.95</h2></a>
+            <a href="/?precio=19.95&precio=29.95"><h2>19.95 - 29.95</h2></a>
+            <a href="/?precio=29.95&precio=4999"><h2>29.95+</h2></a>
+        </div>
+         <div class="sortby sideSort">
+            <h3 class="titleSort">Sides</h3>
+            <a href="/?lados=0"><h2>0</h2></a>
+            <a href="/?lados=6"><h2>6</h2></a>
+            <a href="/?lados=12"><h2>12</h2></a>
+        </div>
+
     </div>
 
-       {{#each productos}}
-            <div class="producto" color="{{color}}">
-                <a href="/productos/{{name}}">
-                    <img src="{{imagen}}" alt="{{name}}">
-                </a><button> &#9951; ${{precio}}</button>
-            </div>    
-       {{/each}}
-    <!-- imagen, direccion : fidget-rosa-->
+    <div class="productosContainer">
+    {{#each productos}}
+    <div class="productoContainer">
+
+        <div class="producto" color="{{color}}" >
+            <a href="/productos/{{direccion}}">
+                <img src="{{image}}" alt="{{name}}">
+            </a><button> &#9951; ${{precio}}</button>
+        </div>    
+    </div>
+    {{/each}}
+
+    </div>
+
 </body>
 </html>

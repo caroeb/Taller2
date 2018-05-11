@@ -1,0 +1,170 @@
+{
+    "productos": [
+
+        {
+            "name": "Fidget-Cube",
+            "direccion": "fidgetcube_amarillo",
+            "color": "Amarillo",
+            "precio": 19.95,
+            "lados": "6",
+            "tipo": "fidgetcube",
+            "image": "/img/amarillo.png"
+        },
+        {
+            "name": "Fidget-Cube",
+            "direccion": "fidgetcube_rosa",
+
+            "color": "Rosa",
+            "precio": 19.95,
+            "lados": "6",
+            "tipo": "fidgetcube",
+            "image": "/img/fucsia.png"
+        },
+        {
+            "name": "Fidget-Cube",
+            "direccion": "fidgetcube_verde",
+
+            "color": "Verde",
+            "precio": 19.95,
+            "lados": "6",
+            "tipo": "fidgetcube",
+            "image": "/img/verde.png"
+        },
+        {
+            "name": "Fidget-Cube",
+            "direccion": "fidgetcube_azul",
+
+            "color": "Azul",
+            "precio": 19.95,
+            "lados": "6",
+            "tipo": "fidgetcube",
+            "image": "/img/azul.png"
+        },
+        
+        {
+            "name": "Fidget-Cube",
+            "direccion": "fidgetcube_gris",
+
+            "color": "Gris",
+            "precio": 19.95,
+            "lados": "6",
+            "tipo": "fidgetcube",
+            "image": "/img/gris.png"
+        },
+        {
+            "name": "Fidget-Cube",
+            "direccion": "fidgetcube_negro",
+
+            "color": "Negro",
+            "precio": 19.95,
+            "lados": "6",
+            "tipo": "fidgetcube",
+            "image": "/img/negro.png"
+        },
+        {
+            "name": "Fidget-Spinners",
+            "direccion": "fidgetspinners_amarillo",
+
+            "color": "Amarillo",
+            "precio": 9.95,
+            "tipo": "fidgetspinner",
+            "image": "/img/spinneramarillo.png"
+        },
+        {
+            "name": "Fidget-Spinners",
+            "direccion": "fidgetspinners_azul",
+
+            "color": "Azul",
+            "precio": 9.95,
+            "tipo": "fidgetspinner",
+            "image": "/img/spinnerazul.png"
+        },
+        {
+            "name": "Fidget-Spinners",
+            "direccion": "fidgetspinners_verde",
+
+            "color": "Verde",
+            "precio": 9.95,
+            "tipo": "fidgetspinner",
+            "image": "/img/spinnerverde.png"
+        },
+        {
+            "name": "Fidget-Spinners",
+            "direccion": "fidgetspinners_gris",
+
+            "color": "Gris",
+            "precio": 9.95,
+            "tipo": "fidgetspinner",
+            "image": "/img/spinnergris.png"
+        },
+        {
+            "name": "Fidget-Spinners",
+            "direccion": "fidgetspinners_negro",
+
+            "color": "Negro",
+            "precio": 9.95,
+            "tipo": "fidgetspinner",
+            "image": "/img/spinnernegro.png"
+        },
+        {
+            "name": "Fidget-Spinners",
+            "direccion": "fidgetspinners_rosa",
+
+            "color": "Rosa",
+            "precio": 9.95,
+            "tipo": "fidgetspinner",
+            "image": "/img/spinnerrosa.png"
+        },
+        {
+            "name": "Fidget-Cube 2.0",
+            "direccion": "fidgetcube2_amarillo",
+
+            "color": "Azul",
+            "precio": 9.95,
+            "tipo": "fidgetcube2",
+            "lados": "12",
+            "image": "/img/fidgetazul2.png"
+        },
+        {
+            "name": "Fidget-Cube 2.0",
+            "direccion": "fidgetcube2_gris",
+
+            "color": "Gris",
+            "precio": 9.95,
+            "tipo": "fidgetcube2",
+            "lados": "12",
+            "image": "/img/fidgetgris2.png"
+        },
+        {
+            "name": "Fidget-Cube 2.0",
+            "direccion": "fidgetcube2_rosa",
+
+            "color": "Rosa",
+            "precio": 29.95,
+            "tipo": "fidgetcube2",
+            "lados": "12",
+            "image": "/img/fidgetrosa2.png"
+        },
+        {
+            "name": "Fidget-Cube 2.0",
+            "direccion": "fidgetcube2_verde",
+
+            "color": "Verde",
+            "precio": 29.95,
+            "tipo": "fidgetcube2",
+            "lados": "12",
+            "image": "/img/fidgetverde2.png"
+        },
+        {
+            "name": "Fidget-Cube 2.0",
+            "direccion": "fidgetcube2_negro",
+
+            "color": "Negro",
+            "precio": 29.95,
+            "tipo": "fidgetcube2",
+            "lados": "12",
+            "image": "/img/fidgetnegro2.png"
+        }
+
+    ]
+}

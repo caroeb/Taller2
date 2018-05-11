@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAYA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,KAAK;CAIrB",
+    "sources": [
+        "vista_producto.scss"
+    ],
+    "names": [],
+    "file": "vista_producto.css"
+}

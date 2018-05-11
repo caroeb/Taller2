@@ -27,13 +27,31 @@ app.get("/",(req, res) => {
 
     if (req.query.color) 
         productos.filter({color : req.query.color});
-        
+    if (req.query.precio){
+        console.log(req.query.precio);
+
+        productos.filter({precio : {
+            $gte: parseFloat(req.query.precio[0]),
+            $lte: parseFloat(req.query.precio[1])
+        }
+         });
+    }
+
+    if (req.query.lados) 
+         productos.filter({
+             lados: req.query.lados
+         });
     productos.toArray((err, result) => {
         //console.log(productos);
         res.render("index", {
             productos : result
         })
     });
+
+    /*
+    a -> pantalla(a) -> /a
+    
+    */
     /*
     res.render("index", {
         validar: "hi"
@@ -41,10 +59,11 @@ app.get("/",(req, res) => {
     */
 });
 
-app.get("/productos/:name", (req, res) => {
+app.get("/productos/:direccion", (req, res) => {
+    console.log("hola");
     db.collection('productos').find (
         {
-            name: req.params.name
+            direccion: req.params.direccion
         }
     ).toArray((err, result) => {
         console.log(result[0]);
