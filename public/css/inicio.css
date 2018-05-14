@@ -2,6 +2,7 @@
   position: fixed;
   background: #eee;
   width: 18%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -19,7 +20,7 @@
   width: 70%;
   background: #ccc;
   padding: 15px;
-  margin-top: 25px;
+  margin-top: 20px;
   text-align: center;
   box-sizing: content-box;
   border: 2px #aaa solid;
@@ -35,9 +36,14 @@
   box-sizing: content-box;
 }
 
+.sorters .colorSort {
+  margin-top: 10px;
+}
+
 .sorters .colorSort .colors {
   width: 100%;
-  margin: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
   padding: 1px;
 }
 
@@ -78,12 +84,53 @@
   color: #4D4D4D;
 }
 
+.sorters .priceSort {
+  font: 10px "Roboto", sans-serif;
+}
+
+.sorters .priceSort h3 {
+  margin-bottom: 10px;
+}
+
+.sorters .priceSort a {
+  padding: 14px;
+  margin-left: 15px;
+}
+
+.sorters .sideSort {
+  font: 17px "Roboto", sans-serif;
+}
+
+.sorters .sideSort h3 {
+  margin-bottom: 10px;
+}
+
+.sorters .sideSort a {
+  height: 80%;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background: #aaa;
+  display: inline-block;
+}
+
+.sorters .sideSort h2 {
+  width: 80%;
+  margin-top: 12px;
+  margin-left: 5px;
+  text-align: center;
+  background: #aaa;
+}
+
 .productosContainer {
   margin-left: 20%;
 }
 
 .productosContainer .productoContainer {
   display: inline-block;
+  margin-top: 150px;
+  margin-bottom: -150px;
 }
 
 .productosContainer .productoContainer .producto {
@@ -91,7 +138,6 @@
   flex-direction: column;
   width: 200px;
   margin-left: 170px;
-  margin-top: 100px;
 }
 
 .productosContainer .productoContainer .producto img {

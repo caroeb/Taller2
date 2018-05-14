@@ -41,22 +41,14 @@ app.get("/",(req, res) => {
          productos.filter({
              lados: req.query.lados
          });
+
     productos.toArray((err, result) => {
-        //console.log(productos);
+       
         res.render("index", {
             productos : result
         })
     });
 
-    /*
-    a -> pantalla(a) -> /a
-    
-    */
-    /*
-    res.render("index", {
-        validar: "hi"
-    });
-    */
 });
 
 app.get("/productos/:direccion", (req, res) => {
