@@ -16,6 +16,10 @@ $color_primario: #00DCBC;
     
 }
 
+body{
+    overflow-y: hidden;
+}
+
 .visualizacionProducto{
 
     width: 100%;
@@ -50,9 +54,9 @@ $color_primario: #00DCBC;
     }
 
     .imagen{
-        background: $yellow;
         width: 50%;
         margin-top: 80px;
+        
         h1{
 
             height: 70%;
@@ -70,3 +74,27 @@ $color_primario: #00DCBC;
     }
 }
 
+
+[color~="Amarillo"] {
+    background: $yellow;
+}
+
+[color~="Azul"] {
+    background: $blue;   
+}
+
+[color~="Rosa"] {
+    background: $pink;
+}
+
+[color~="Negro"] {
+    background: $black;
+}
+
+[color~="Gris"] {
+    background: $gray;
+}
+
+[color~="Verde"] {
+    background: $green; 
+}

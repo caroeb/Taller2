@@ -1,170 +1,167 @@
 {
-    "productos": [
+    "name": "Fidget-Cube",
+    "direccion": "fidgetcube_amarillo",
+    "color": "Amarillo",
+    "precio": 19.95,
+    "lados": "6",
+    "tipo": "fidgetcube",
+    "image": "/img/amarillo.png",
+    "descripcion":"An unusually addicting, high-quality desk toy designed to help you focus. Fidget at work, in class and at home in style. Fidget Cube has six sides. Each side features something to fidget with: Click. Glide. Flip. Breathe. Roll. Spin."
+}
+{
+    "name": "Fidget-Cube",
+    "direccion": "fidgetcube_rosa",
+    "color": "Rosa",
+    "precio": 19.95,
+    "lados": "6",
+    "tipo": "fidgetcube",
+    "image": "/img/fucsia.png",
+    "descripcion":"An unusually addicting, high-quality desk toy designed to help you focus. Fidget at work, in class and at home in style. Fidget Cube has six sides. Each side features something to fidget with: Click. Glide. Flip. Breathe. Roll. Spin."
+}
+{
+    "name": "Fidget-Cube",
+    "direccion": "fidgetcube_verde",
+    "color": "Verde",
+    "precio": 19.95,
+    "lados": "6",
+    "tipo": "fidgetcube",
+    "image": "/img/verde.png",
+    "descripcion":"An unusually addicting, high-quality desk toy designed to help you focus. Fidget at work, in class and at home in style. Fidget Cube has six sides. Each side features something to fidget with: Click. Glide. Flip. Breathe. Roll. Spin."
+}
+{
+    "name": "Fidget-Cube",
+    "direccion": "fidgetcube_azul",
+    "color": "Azul",
+    "precio": 19.95,
+    "lados": "6",
+    "tipo": "fidgetcube",
+    "image": "/img/azul.png",
+    "descripcion":"An unusually addicting, high-quality desk toy designed to help you focus. Fidget at work, in class and at home in style. Fidget Cube has six sides. Each side features something to fidget with: Click. Glide. Flip. Breathe. Roll. Spin."
+}
 
-        {
-            "name": "Fidget-Cube",
-            "direccion": "fidgetcube_amarillo",
-            "color": "Amarillo",
-            "precio": 19.95,
-            "lados": "6",
-            "tipo": "fidgetcube",
-            "image": "/img/amarillo.png"
-        },
-        {
-            "name": "Fidget-Cube",
-            "direccion": "fidgetcube_rosa",
-
-            "color": "Rosa",
-            "precio": 19.95,
-            "lados": "6",
-            "tipo": "fidgetcube",
-            "image": "/img/fucsia.png"
-        },
-        {
-            "name": "Fidget-Cube",
-            "direccion": "fidgetcube_verde",
-
-            "color": "Verde",
-            "precio": 19.95,
-            "lados": "6",
-            "tipo": "fidgetcube",
-            "image": "/img/verde.png"
-        },
-        {
-            "name": "Fidget-Cube",
-            "direccion": "fidgetcube_azul",
-
-            "color": "Azul",
-            "precio": 19.95,
-            "lados": "6",
-            "tipo": "fidgetcube",
-            "image": "/img/azul.png"
-        },
-        
-        {
-            "name": "Fidget-Cube",
-            "direccion": "fidgetcube_gris",
-
-            "color": "Gris",
-            "precio": 19.95,
-            "lados": "6",
-            "tipo": "fidgetcube",
-            "image": "/img/gris.png"
-        },
-        {
-            "name": "Fidget-Cube",
-            "direccion": "fidgetcube_negro",
-
-            "color": "Negro",
-            "precio": 19.95,
-            "lados": "6",
-            "tipo": "fidgetcube",
-            "image": "/img/negro.png"
-        },
-        {
-            "name": "Fidget-Spinners",
-            "direccion": "fidgetspinners_amarillo",
-
-            "color": "Amarillo",
-            "precio": 9.95,
-            "tipo": "fidgetspinner",
-            "image": "/img/spinneramarillo.png"
-        },
-        {
-            "name": "Fidget-Spinners",
-            "direccion": "fidgetspinners_azul",
-
-            "color": "Azul",
-            "precio": 9.95,
-            "tipo": "fidgetspinner",
-            "image": "/img/spinnerazul.png"
-        },
-        {
-            "name": "Fidget-Spinners",
-            "direccion": "fidgetspinners_verde",
-
-            "color": "Verde",
-            "precio": 9.95,
-            "tipo": "fidgetspinner",
-            "image": "/img/spinnerverde.png"
-        },
-        {
-            "name": "Fidget-Spinners",
-            "direccion": "fidgetspinners_gris",
-
-            "color": "Gris",
-            "precio": 9.95,
-            "tipo": "fidgetspinner",
-            "image": "/img/spinnergris.png"
-        },
-        {
-            "name": "Fidget-Spinners",
-            "direccion": "fidgetspinners_negro",
-
-            "color": "Negro",
-            "precio": 9.95,
-            "tipo": "fidgetspinner",
-            "image": "/img/spinnernegro.png"
-        },
-        {
-            "name": "Fidget-Spinners",
-            "direccion": "fidgetspinners_rosa",
-
-            "color": "Rosa",
-            "precio": 9.95,
-            "tipo": "fidgetspinner",
-            "image": "/img/spinnerrosa.png"
-        },
-        {
-            "name": "Fidget-Cube 2.0",
-            "direccion": "fidgetcube2_amarillo",
-
-            "color": "Azul",
-            "precio": 9.95,
-            "tipo": "fidgetcube2",
-            "lados": "12",
-            "image": "/img/fidgetazul2.png"
-        },
-        {
-            "name": "Fidget-Cube 2.0",
-            "direccion": "fidgetcube2_gris",
-
-            "color": "Gris",
-            "precio": 9.95,
-            "tipo": "fidgetcube2",
-            "lados": "12",
-            "image": "/img/fidgetgris2.png"
-        },
-        {
-            "name": "Fidget-Cube 2.0",
-            "direccion": "fidgetcube2_rosa",
-
-            "color": "Rosa",
-            "precio": 29.95,
-            "tipo": "fidgetcube2",
-            "lados": "12",
-            "image": "/img/fidgetrosa2.png"
-        },
-        {
-            "name": "Fidget-Cube 2.0",
-            "direccion": "fidgetcube2_verde",
-
-            "color": "Verde",
-            "precio": 29.95,
-            "tipo": "fidgetcube2",
-            "lados": "12",
-            "image": "/img/fidgetverde2.png"
-        },
-        {
-            "name": "Fidget-Cube 2.0",
-            "direccion": "fidgetcube2_negro",
-
-            "color": "Negro",
-            "precio": 29.95,
-            "tipo": "fidgetcube2",
-            "lados": "12",
-            "image": "/img/fidgetnegro2.png"
-        }
-
-    ]
+{
+    "name": "Fidget-Cube",
+    "direccion": "fidgetcube_gris",
+    "color": "Gris",
+    "precio": 19.95,
+    "lados": "6",
+    "tipo": "fidgetcube",
+    "image": "/img/gris.png",
+    "descripcion":"An unusually addicting, high-quality desk toy designed to help you focus. Fidget at work, in class and at home in style. Fidget Cube has six sides. Each side features something to fidget with: Click. Glide. Flip. Breathe. Roll. Spin."
+}
+{
+    "name": "Fidget-Cube",
+    "direccion": "fidgetcube_negro",
+    "color": "Negro",
+    "precio": 19.95,
+    "lados": "6",
+    "tipo": "fidgetcube",
+    "image": "/img/negro.png",
+    "descripcion":"An unusually addicting, high-quality desk toy designed to help you focus. Fidget at work, in class and at home in style. Fidget Cube has six sides. Each side features something to fidget with: Click. Glide. Flip. Breathe. Roll. Spin."
+}
+{
+    "name": "Fidget-Spinners",
+    "direccion": "fidgetspinners_amarillo",
+    "color": "Amarillo",
+    "precio": 9.95,
+    "tipo": "fidgetspinner",
+    "image": "/img/spinneramarillo.png",
+    "descripcion":"The Fidget Spinner is designed to relieve stress and anxiety. Helps you stay focused! This is a great toy for fidgeters. Flick and spin with just one or both hands. It is perfect for both adults and kids who love fidgeting."
+}
+{
+    "name": "Fidget-Spinners",
+    "direccion": "fidgetspinners_azul",
+    "color": "Azul",
+    "precio": 9.95,
+    "tipo": "fidgetspinner",
+    "image": "/img/spinnerazul.png",
+    "descripcion":"The Fidget Spinner is designed to relieve stress and anxiety. Helps you stay focused! This is a great toy for fidgeters. Flick and spin with just one or both hands. It is perfect for both adults and kids who love fidgeting."
+}
+{
+    "name": "Fidget-Spinners",
+    "direccion": "fidgetspinners_verde",
+    "color": "Verde",
+    "precio": 9.95,
+    "tipo": "fidgetspinner",
+    "image": "/img/spinnerverde.png",
+    "descripcion":"The Fidget Spinner is designed to relieve stress and anxiety. Helps you stay focused! This is a great toy for fidgeters. Flick and spin with just one or both hands. It is perfect for both adults and kids who love fidgeting."
+}
+{
+    "name": "Fidget-Spinners",
+    "direccion": "fidgetspinners_gris",
+    "color": "Gris",
+    "precio": 9.95,
+    "tipo": "fidgetspinner",
+    "image": "/img/spinnergris.png",
+    "descripcion":"The Fidget Spinner is designed to relieve stress and anxiety. Helps you stay focused! This is a great toy for fidgeters. Flick and spin with just one or both hands. It is perfect for both adults and kids who love fidgeting."
+}
+{
+    "name": "Fidget-Spinners",
+    "direccion": "fidgetspinners_negro",
+    "color": "Negro",
+    "precio": 9.95,
+    "tipo": "fidgetspinner",
+    "image": "/img/spinnernegro.png",
+    "descripcion":"The Fidget Spinner is designed to relieve stress and anxiety. Helps you stay focused! This is a great toy for fidgeters. Flick and spin with just one or both hands. It is perfect for both adults and kids who love fidgeting."
+}
+{
+    "name": "Fidget-Spinners",
+    "direccion": "fidgetspinners_rosa",
+    "color": "Rosa",
+    "precio": 9.95,
+    "tipo": "fidgetspinner",
+    "image": "/img/spinnerrosa.png",
+    "descripcion":"The Fidget Spinner is designed to relieve stress and anxiety. Helps you stay focused! This is a great toy for fidgeters. Flick and spin with just one or both hands. It is perfect for both adults and kids who love fidgeting."
+}
+{
+    "name": "Fidget-Cube 2.0",
+    "direccion": "fidgetcube2_amarillo",
+    "color": "Azul",
+    "precio": 9.95,
+    "tipo": "fidgetcube2",
+    "lados": "12",
+    "image": "/img/fidgetazul2.png",
+    "descripcion":"Introducing Fidget XL. The ultimate toy to aid focus and relive stress. Fidget at work, in class and at home in style. Fidget XL has 12 sides. Each side features something to fidget with."
+}
+{
+    "name": "Fidget-Cube 2.0",
+    "direccion": "fidgetcube2_gris",
+    "color": "Gris",
+    "precio": 29.95,
+    "tipo": "fidgetcube2",
+    "lados": "12",
+    "image": "/img/fidgetgris2.png",
+    "descripcion":"Introducing Fidget XL. The ultimate toy to aid focus and relive stress. Fidget at work, in class and at home in style. Fidget XL has 12 sides. Each side features something to fidget with."
+    
+}
+{
+    "name": "Fidget-Cube 2.0",
+    "direccion": "fidgetcube2_rosa",
+    "color": "Rosa",
+    "precio": 29.95,
+    "tipo": "fidgetcube2",
+    "lados": "12",
+    "image": "/img/fidgetrosa2.png",
+    "descripcion":"Introducing Fidget XL. The ultimate toy to aid focus and relive stress. Fidget at work, in class and at home in style. Fidget XL has 12 sides. Each side features something to fidget with."
+   
+}
+{
+    "name": "Fidget-Cube 2.0",
+    "direccion": "fidgetcube2_verde",
+    "color": "Verde",
+    "precio": 29.95,
+    "tipo": "fidgetcube2",
+    "lados": "12",
+    "image": "/img/fidgetverde2.png",
+    "descripcion":"Introducing Fidget XL. The ultimate toy to aid focus and relive stress. Fidget at work, in class and at home in style. Fidget XL has 12 sides. Each side features something to fidget with."
+}
+{
+    "name": "Fidget-Cube 2.0",
+    "direccion": "fidgetcube2_negro",
+    "color": "Negro",
+    "precio": 29.95,
+    "tipo": "fidgetcube2",
+    "lados": "12",
+    "image": "/img/fidgetnegro2.png",
+    "descripcion":"Introducing Fidget XL. The ultimate toy to aid focus and relive stress. Fidget at work, in class and at home in style. Fidget XL has 12 sides. Each side features something to fidget with."
 }

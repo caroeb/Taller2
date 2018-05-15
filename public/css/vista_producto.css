@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 .visualizacionProducto {
   width: 100%;
   height: 100%;
@@ -36,7 +40,6 @@
 }
 
 .visualizacionProducto .imagen {
-  background: #F8CA5F;
   width: 50%;
   margin-top: 80px;
 }
@@ -54,5 +57,29 @@
   top: 170px;
   left: 870px;
   width: 500px;
+}
+
+[color~="Amarillo"] {
+  background: #F8CA5F;
+}
+
+[color~="Azul"] {
+  background: #71CAFB;
+}
+
+[color~="Rosa"] {
+  background: #B83664;
+}
+
+[color~="Negro"] {
+  background: #4D4D4D;
+}
+
+[color~="Gris"] {
+  background: #DDDDDD;
+}
+
+[color~="Verde"] {
+  background: #82BB57;
 }
 /*# sourceMappingURL=vista_producto.css.map */

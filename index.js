@@ -18,7 +18,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 
     db = client.db('fidget');
 
-    app.listen(3000);
+    app.listen(3001);
 });
 
 app.get("/",(req, res) => {
