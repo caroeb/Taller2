@@ -10,7 +10,13 @@ $fuente_parrafo: 'Open Sans Condensed',
 sans-serif;
 $color_primario: #00DCBC;
 
-
+h4{
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    z-index: 1000;
+    font: 15px $fuente_titulo;
+}
 
 .sorters {
     position: fixed;
@@ -24,6 +30,8 @@ $color_primario: #00DCBC;
     margin-top: 100px;
     margin-left: 40px;
     float: left;
+
+    
     h3 {
         font-family: sans-serif;
         text-transform: uppercase;

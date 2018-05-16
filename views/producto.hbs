@@ -9,7 +9,7 @@
     <title>{{fidget.name}}</title>
 </head>
 <header>
-
+    <h4><span class="carrito">0</span></h4>
     <div class="nav">
         <a href="" class="home">
             <img src="/img/logo.png" width="150px" alt="">
@@ -20,7 +20,7 @@
         <a href="" class="menu">Shop</a>
         <a href="" class="menu">Contact Us</a>
 
-        <a href="" class="carrito">
+        <a href="" class="carro">
             <img src="/img/iconocar.png" width="40px" alt="">
         </a>
     </div>
@@ -28,18 +28,19 @@
 
 <body>
 
-    
     <div class="visualizacionProducto">
         <div class="info">
             
             <h1>{{fidget.name}}</h1>
-            <p><b>Precio:</b>&nbsp;${{fidget.precio}}</p>
+            
+            <p><b>Price:</b>&nbsp;${{fidget.precio}}</p>
             <p><b>Color:</b>&nbsp;{{fidget.color}}</p>
-            <p><b>Lados:</b>&nbsp;{{fidget.lados}}</p>
-            <p><b>Peso:</b>&nbsp;{{fidget.peso}}</p>
-            <p><b>Tamaño:</b>&nbsp;{{fidget.tamano}}</p></br>
+            <p><b>Sides:</b>&nbsp;{{fidget.lados}}</p>
+            <p><b>Weight:</b>&nbsp;{{fidget.peso}}</p>
+            <p><b>Size:</b>&nbsp;{{fidget.tamano}}</p></br>
             <p>{{fidget.descripcion}}</p>
-            </a><button class="agregar">AGREGAR A CARRITO</button>
+        
+            <button class="agregar">ADD TO CAR</button>
             
             <div class="cuadrados">
               <div class="cuadradoUno"></div>

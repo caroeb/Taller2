@@ -8,7 +8,15 @@ fetch('http://localhost:3000/productosPorIds?ids='+arreglo)
     console.log(res);
 
     var lista = document.querySelector('.lista');
-    res.forEach(function(fidget){
-        lista.innerHTML += '<li><img width="100" src="'+fidget.image+'">' + fidget.direccion + '</li>';
+    res.forEach(function(elem){
+        lista.innerHTML += `<tr>
+        <td>` + elem.marca +` ` + elem.modelo + `</td>
+        <td>` + elem.precio + `</td>
+        <td>20 Febrero - 24 Febrero </td>
+        <td>4 Días</td>
+        <td> ` + elem.precio * 4 + ` </td>
+        <td><i class="fas fa-times-circle" title="Eliminar"></i></td>
+        </tr>
+        `; 
     });
 });

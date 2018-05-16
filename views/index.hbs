@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/css/nav.css">
 </head>
 <body>
-    
+    <h4><span class="carrito">0</span></h4>
     <header>
         
         <div class="nav">
@@ -21,14 +21,14 @@
             <a href="" class="menu">Shop</a>
             <a href="" class="menu">Contact Us</a>
 
-            <a href="" class="carrito">
+            <a href="" class="carro">
                 <img src="img/iconocar.png" width="40px" alt="">
             </a>
         </div>
     </header>
 
     <div class="sorters">
-
+                
         <h3 class="titleSort">Filter by</h3>
         <div class="sortby colorSort">
             <h3 class="titleSort">Color</h3>
@@ -85,20 +85,22 @@
         </div>
 
     </div>
-
+    
     <div class="productosContainer">
     {{#each productos}}
     
     <div class="productoContainer">
-        
-        <div class="producto" color="{{color}}" >
-            <a href="/productos/{{direccion}}">
-                <img src="{{image}}" alt="{{name}}">
-            </a>
-            
-            <button> &#9951; ${{precio}}</button>
+        <div class="algo" 
+            data-id="{{this._id}}">
+            <div class="producto" color="{{color}}" >
+                <a href="/productos/{{direccion}}">
+                    <img src="{{image}}" alt="{{name}}">
+                </a>
+                
+                <button class="agregar"> &#9951; ${{precio}}</button>
 
-        </div>    
+            </div>
+        </div>        
     </div>
    
     {{/each}}

@@ -3,6 +3,14 @@
   margin: 0;
 }
 
+h4 {
+  position: absolute;
+  right: 150px;
+  top: 15px;
+  z-index: 1000;
+  font: 15px "Roboto", sans-serif;
+}
+
 body {
   overflow-y: hidden;
   overflow-x: hidden;
@@ -100,12 +108,12 @@ body {
   cursor: pointer;
   background-color: #00DCBC;
   margin-top: 40px;
-  margin-left: 30px;
+  margin-left: 45px;
   color: white;
   border-radius: 10px;
   border: solid 0px blue;
   height: 40px;
-  padding: 5px 30px 5px 30px;
+  padding: 5px 40px 5px 40px;
   font: 15px "Open Sans Condensed", sans-serif;
   text-align: center;
 }

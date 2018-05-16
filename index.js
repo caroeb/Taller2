@@ -3,7 +3,8 @@ const MongoClient = require("mongodb").MongoClient
         ObjectID = require('mongodb').ObjectID,
         consolidate = require("consolidate"),
         handlebars = require("handlebars");
-        
+        engines = require('consolidate');
+
 var app = express(),
 db;
 
@@ -58,8 +59,8 @@ app.get("/productos/:direccion", (req, res) => {
     db.collection('productos').find (
         {
             direccion: req.params.direccion
-        }
-    ).toArray((err, result) => {
+        })
+        .toArray((err, result) => {
         console.log(result[0]);
         res.render('producto', {
             fidget: result[0]
@@ -86,6 +87,10 @@ app.get('/productosPorIds', (req, res) => {
         .toArray((err, result) => {
             res.send(result);
         });
+});
+
+app.get("/error", (req, res) => {
+    res.render('error');
 });
 
 

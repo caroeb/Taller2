@@ -2,7 +2,7 @@ document.querySelectorAll('.agregar').forEach(function(button) {
     button.addEventListener('click', function(){
         var id = button.parentElement.getAttribute('data-id');
 
-        if(arreglo.indexOf(id) >= 0){
+        if(arreglo.indexOf(id) > 0){
             console.log('paila');
             return;
         }
