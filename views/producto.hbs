@@ -33,21 +33,32 @@
         <div class="info">
             
             <h1>{{fidget.name}}</h1>
-            <p>${{fidget.precio}}</p>
-            <p>Color:{{fidget.color}}</p>
-            <p>Lados:{{fidget.lados}}</p>
+            <p><b>Precio:</b>&nbsp;${{fidget.precio}}</p>
+            <p><b>Color:</b>&nbsp;{{fidget.color}}</p>
+            <p><b>Lados:</b>&nbsp;{{fidget.lados}}</p>
+            <p><b>Peso:</b>&nbsp;{{fidget.peso}}</p>
+            <p><b>Tamaño:</b>&nbsp;{{fidget.tamano}}</p></br>
             <p>{{fidget.descripcion}}</p>
-            </a><button> Add to car </button>
+            </a><button class="agregar">AGREGAR A CARRITO</button>
             
+            <div class="cuadrados">
+              <div class="cuadradoUno"></div>
+              <div class="cuadradoDos"></div>
+              <div class="cuadradoTres"></div>
+              <div class="cuadradoCuatro"></div>  
+            </div>
+
         </div>
         
         <div class="imagen" color="{{fidget.color}}">
-            <h1>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br></h1>
+            <h1><b>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>DGET•FIDGET•FIDGET•FIDGET•</br>GET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>DGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>GET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>DGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>GET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br></b></h1>
             <img src="{{fidget.image}}" alt=""> 
             
         </div>
     </div>
 
+    <script src="js/cliente.js"></script>
+    <script src="js/productosfidget.js"></script>
 </body>
 
 </html>

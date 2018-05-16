@@ -1,8 +1,9 @@
-const express = require ("express"),
+const MongoClient = require("mongodb").MongoClient
+        express = require ("express"),
+        ObjectID = require('mongodb').ObjectID,
         consolidate = require("consolidate"),
-        handlebars = require("handlebars"),
-        MongoClient = require("mongodb").MongoClient
-        ;
+        handlebars = require("handlebars");
+        
 var app = express(),
 db;
 
@@ -18,7 +19,7 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 
     db = client.db('fidget');
 
-    app.listen(3001);
+    app.listen(3000);
 });
 
 app.get("/",(req, res) => {
@@ -27,6 +28,7 @@ app.get("/",(req, res) => {
 
     if (req.query.color) 
         productos.filter({color : req.query.color});
+        
     if (req.query.precio){
         console.log(req.query.precio);
 
@@ -65,33 +67,25 @@ app.get("/productos/:direccion", (req, res) => {
     });
 });
 
-/*
-para instalar mongod
-archivos de programa mongod server 3.4 bin. Run gitbash here: ./mongod. Crear carpeta mongo/db en C: . Volver a correr
+app.get('/producto/:id', (req, res) => {
+    db.collection('productos').find({ direccion: req.params.id }).toArray((err, result) => res.send(result))
+});
 
-Para buscar:
-db.getCollection('countries').find({}, {area:0})
-0 para ignorar 1 para buscar ese dato en especifico
+app.get('/checkout', (req, res) => {
+    res.render('checkout');
+});
 
-'name.common' rama y division por puntos entre comillas. Esto hace que aparezca ese valor de esa rama especifica,
+app.get('/productosPorIds', (req, res) => {
+    console.log(req.query.ids);
+    var arreglo = req.query.ids.split(',');
+    arreglo = arreglo.map(function(id) {
+        return new ObjectID(id);
+    });
+    var prod = db.collection('productos')
+        .find({ _id: { $in: arreglo } })
+        .toArray((err, result) => {
+            res.send(result);
+        });
+});
 
-Para buscar un numero exacto se coloca despues de los ":"
 
-Para buscar  por criterio exacto en el primer valor se coloca la cosa: $(palabra reservada)lt
-
-lt: less than
-gt: greatter than
-gte: greater than or equal
-lte: less than or equal.
-
-.sort({area:1})
-
-languages: {"spa": "Spanish"}
-Especificar una palabra especifica, unica y sola.
-
-'languages.spa': "Spanish"
-Especificar que exista spa y que sea Spanish
-            'languages.spa': {$exists: 1}
-Especificar que exista languages.spa y ya. Solo que exista.
-
-*/

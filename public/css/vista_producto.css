@@ -5,37 +5,108 @@
 
 body {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .visualizacionProducto {
   width: 100%;
   height: 100%;
   display: flex;
-  background: #F3F3F3;
 }
 
 .visualizacionProducto .info {
   width: 50%;
-  margin-top: 300px;
+  margin-top: 240px;
   margin-left: 200px;
-  font: 15px "Roboto", sans-serif;
+}
+
+.visualizacionProducto .info .cuadrados .cuadradoUno {
+  width: 100px;
+  height: 100px;
+  background: #F8CA5F;
+  position: absolute;
+  top: 300px;
+  left: 120px;
+  opacity: 0.48;
+  z-index: -1000000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.visualizacionProducto .info .cuadrados .cuadradoDos {
+  width: 50px;
+  height: 50px;
+  background: #82BB57;
+  position: absolute;
+  top: 460px;
+  left: 420px;
+  opacity: 0.48;
+  z-index: -1000000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.visualizacionProducto .info .cuadrados .cuadradoTres {
+  width: 150px;
+  height: 150px;
+  background: #71CAFB;
+  position: absolute;
+  top: 150px;
+  left: 560px;
+  opacity: 0.48;
+  z-index: -1000000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.visualizacionProducto .info .cuadrados .cuadradoCuatro {
+  width: 200px;
+  height: 200px;
+  background: #B83664;
+  position: absolute;
+  top: 650px;
+  left: -20px;
+  opacity: 0.48;
+  z-index: -1000000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.visualizacionProducto .info h1 {
+  font: 25px "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .visualizacionProducto .info p {
-  width: 70%;
+  width: 50%;
   text-align: justify;
+  font: 15px "Open Sans Condensed", sans-serif;
 }
 
 .visualizacionProducto .info button {
   cursor: pointer;
   background-color: #00DCBC;
-  margin: 20px 0 20px 0;
+  margin-top: 40px;
+  margin-left: 30px;
   color: white;
   border-radius: 10px;
   border: solid 0px blue;
   height: 40px;
-  font-size: 20px;
-  padding: 10px;
+  padding: 5px 30px 5px 30px;
+  font: 15px "Open Sans Condensed", sans-serif;
   text-align: center;
 }
 
@@ -45,8 +116,7 @@ body {
 }
 
 .visualizacionProducto .imagen h1 {
-  height: 70%;
-  font: 40px "Open Sans Condensed", sans-serif;
+  font: 70px "Open Sans Condensed", sans-serif;
   color: white;
   opacity: 0.48;
   text-align: justify;
@@ -55,7 +125,7 @@ body {
 .visualizacionProducto .imagen img {
   position: absolute;
   top: 170px;
-  left: 870px;
+  left: 570px;
   width: 500px;
 }
 

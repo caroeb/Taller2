@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/css/nav.css">
 </head>
 <body>
+    
     <header>
         
         <div class="nav">
@@ -76,7 +77,7 @@
             <a href="/?precio=19.95&precio=29.95"><h2>19.95 - 29.95</h2></a>
             <a href="/?precio=29.95&precio=4999"><h2>29.95...+</h2></a>
         </div>
-         <div class="sortby sideSort">
+        <div class="sortby sideSort">
             <h3 class="titleSort">Sides</h3>
             <a href="/?lados=0"><h2>0</h2></a>
             <a href="/?lados=6"><h2>6</h2></a>
@@ -87,17 +88,24 @@
 
     <div class="productosContainer">
     {{#each productos}}
+    
     <div class="productoContainer">
-
+        
         <div class="producto" color="{{color}}" >
             <a href="/productos/{{direccion}}">
                 <img src="{{image}}" alt="{{name}}">
-            </a><button> &#9951; ${{precio}}</button>
+            </a>
+            
+            <button> &#9951; ${{precio}}</button>
+
         </div>    
     </div>
+   
     {{/each}}
 
     </div>
+    <script src="js/cliente.js"></script>
+    <script src="js/productosfidget.js"></script>
 
 </body>
 </html>
